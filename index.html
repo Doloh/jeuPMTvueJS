@@ -13,13 +13,13 @@
     <div id="app">
         <!-- Score dynamique -->
         <div id="score">
-            <p>PIECE ACTUELLE: {{ actualRoom }}</p>
-            <p>MEILLEUR SCORE: </p>
+            <!-- <p>PIECE ACTUELLE: {{ actualRoomType }}</p> -->
             <p>SCORE: {{ actualScore }} </p>
+            <p>MEILLEUR SCORE: {{ bestScore }} </p>
         </div>
         <div class="etage">
            
-            <img class="roomIllustration piece" :src="actualRoomBackground" :alt="actualRoomBackgroundAlt">                
+            <img class="roomIllustration" :src="actualRoomBackground" :alt="actualRoomBackgroundAlt">                
            
             <!-- Contenu variant -->            
             <div class="dialogBox">
@@ -28,10 +28,12 @@
             </div>
         </div>
         <!-- Un bouton qui apparait quand etage resolu -->
-        <button @click="getActualRoom()">Continuer</button>
-        <!-- nouvel etage avec le même shema -->
+        <span class="nextButton">
+            <button @click="nextRoom()">Continuer</button>
+        </span>
 
         <!-- Chemin résumé du parcours d'etages  -->
+        <div id ="divLogs"></div>
     </div>   
 
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

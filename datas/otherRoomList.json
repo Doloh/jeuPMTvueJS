@@ -1,0 +1,23 @@
+[
+    {
+        "roomTitle":"Une fontaine !",
+        "roomBackground":"",
+        "roomBackgroundAlt":"",
+        "roomDescription":" Vous jetez un peu d'or dedans, ça porte chance il parait...",
+        "roomGold": -30
+    },
+    {
+        "roomTitle":"Un cachot !",
+        "roomBackground":"",
+        "roomBackgroundAlt":"",
+        "roomDescription":"",
+        "roomGold": 0
+    },
+    {
+        "roomTitle":"Rien du tout !",
+        "roomBackground":"",
+        "roomBackgroundAlt":"",
+        "roomDescription":"C'est totalement vide...",
+        "roomGold": 0
+    }
+]
