@@ -1,8 +1,24 @@
+body {
+    margin: auto;
+    width: 80%;
+    background-color:whitesmoke ;
+}
+
+#score {
+    display: flex;
+    justify-content: space-between;
+}
+    #score p {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    }    
+
 .etage {
     width: 100%;
     height: 400px;
     background-color:rgb(110, 104, 104) ;
     display: flex;
+    box-shadow: 12px 12px 2px 1px rgb(49, 49, 49);
 }
 
 .roomIllustration {
@@ -16,21 +32,45 @@
 .dialogBox {
     width: 66%;
     background-color: rgb(110, 104, 104) ;
-}
-
-.dialogBox h1 {
-    color:snow;
-    max-height: 25%;
-    overflow: auto;
-}
-
-.dialogBox p {
-    padding-right: 20px;
-    color: snow;
-    font-size: 20px;
     /* Pour empecher le texte de deborder */
     overflow: auto;
-    max-height: 75%;
-
 }
+    .dialogBox h1 {
+        color:snow;
+    }
+    .dialogBox p {
+        padding-right: 20px;
+        color: snow;
+        font-size: 20px;
+    }
 
+.nextButton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+    .nextButton button {
+        border-radius: 12px;
+        background-color: rgb(110, 104, 104);
+        padding: 15px;
+        font-size: 15px;
+        color: snow;
+        box-shadow: 8px 8px 2px 1px rgb(49, 49, 49);
+
+    }
+
+#divLogs {
+    background-color: rgb(110, 104, 104);
+    max-height: 300px;
+    box-shadow: 12px 12px 2px 1px rgb(49, 49, 49);
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+
+    /* Pour empecher le texte de deborder */
+    overflow: auto;
+}
+    #divLogs p {
+        color:snow;
+        margin: 0;
+        padding: 2px;
+    }
