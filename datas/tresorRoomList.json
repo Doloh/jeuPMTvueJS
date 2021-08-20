@@ -1,0 +1,31 @@
+[
+    {
+        "roomTitle": "Petit Tresor !",
+        "roomBackground":"./images/tresor1.jpg",
+        "roomBackgroundAlt":"",
+        "roomDescription":"",
+        "roomGold": 10
+    },
+    {
+        "roomTitle": "Petit Tresor !",
+        "roomBackground":"./images/tresor1.jpg",
+        "roomBackgroundAlt":"",
+        "roomDescription":"",
+        "roomGold": 10
+    },
+    {
+        "roomTitle": "Tresor Moyen !",
+        "roomBackground":"./images/tresor2.jpg",
+        "roomBackgroundAlt":"",
+        "roomDescription":"",
+        "roomGold": 70
+    },
+    {
+        "roomTitle": "Incroyable Tresor !",
+        "roomBackground":"./images/tresor3.jpg",
+        "roomBackgroundAlt":"",
+        "roomDescription":"",
+        "roomGold": 150
+
+    }
+]

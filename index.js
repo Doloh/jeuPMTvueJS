@@ -1,3 +1,14 @@
+//RECUPERATION DES JSON POUR LES AJOUTER À MES DATAS
+fetch("./datas/monsterRoomList.json")
+    .then(function(res) { if (res.ok) { return res.json(); } })
+    .then(function(value) { mesDatas.MonsterRoomList = value; });
+fetch("./datas/tresorRoomList.json")
+    .then(function(res) { if (res.ok) { return res.json(); } })
+    .then(function(value) { mesDatas.TresorRoomList = value; });
+fetch("./datas/otherRoomList.json")
+    .then(function(res) { if (res.ok) { return res.json(); } })
+    .then(function(value) { mesDatas.otherRoomList = value; });
+
 mesDatas = {
     actualScore: 0,
     actualRoom: "Porte",
@@ -5,68 +16,10 @@ mesDatas = {
     actualRoomBackground: "./images/porte.jpg",
     actualRoomBackgroundAlt: "",
     actualRoomDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        MonsterRoomList: [
-            {
-                roomTitle: "Alien !",
-                roomBackground: "",
-                roomBackgroundAlt: "",
-                roomDescription: "un Alien"
-            },
-            {
-                roomTitle: "Gizmo !",
-                roomBackground:"",
-                roomBackgroundAlt:"",
-                roomDescription: "un Gizmo"
-            },
-            {
-                roomTitle: "Dragon !",
-                roomBackground:"",
-                roomBackgroundAlt:"",
-                roomDescription: "un Dragon"
-            },
-        ],
-        TresorRoomList: [
-            {
-                roomTitle: "Petit Tresor !",
-                roomBackground:"./images/tresor1.jpg",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-            {
-                roomTitle: "Tresor Moyen !",
-                roomBackground:"./images/tresor2.jpg",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-            {
-                roomTitle: "Incroyable Tresor !",
-                roomBackground:"./images/tresor3.jpg",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-        ],
-        otherRoomList: [
-            {
-                roomTitle:"Une fontaine !",
-                roomBackground:"",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-            {
-                roomTitle:"Un cachot !",
-                roomBackground:"",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-            {
-                roomTitle:"Rien du tout !",
-                roomBackground:"",
-                roomBackgroundAlt:"",
-                roomDescription:"",
-            },
-        ]
-
-    
+    actualRoomGold: 0,
+        MonsterRoomList: [],
+        TresorRoomList: [],
+        otherRoomList: []     
 }
 
 const app = new Vue({
@@ -77,7 +30,11 @@ const app = new Vue({
     methods: {
         // renvoie un chiffre compris entre 0 inclus et la valeur max indiquée exclu.
         // 0: monstre 1: tresor 3:autre
-        getActualRoom() {
+        nextRoom() {
+            this.actualScore += this.actualRoomGold;
+            if(this.actualScore < 0) {
+                this.actualScore = 0;
+            }           
             this.actualRoom = getRandomInt(3);
             this.getRoomContent(this.actualRoom);
         },
@@ -90,6 +47,7 @@ const app = new Vue({
                 this.actualRoomDescription = this.MonsterRoomList[i].roomDescription;
                 this.actualRoomBackground = this.MonsterRoomList[i].roomBackground;
                 this.actualRoomBackgroundAlt = this.MonsterRoomList[i].roomBackgroundAlt;
+                this.actualRoomGold = this.MonsterRoomList[i].roomGold;
 
             }
             //TRESOR
@@ -99,7 +57,7 @@ const app = new Vue({
                 this.actualRoomDescription = this.TresorRoomList[i].roomDescription;
                 this.actualRoomBackground = this.TresorRoomList[i].roomBackground;
                 this.actualRoomBackgroundAlt = this.TresorRoomList[i].roomBackgroundAlt;
-                
+                this.actualRoomGold = this.TresorRoomList[i].roomGold;                
             }
             //AUTRE
             else if(roomType == 2) {
@@ -108,8 +66,13 @@ const app = new Vue({
                 this.actualRoomDescription = this.otherRoomList[i].roomDescription;
                 this.actualRoomBackground = this.otherRoomList[i].roomBackground;
                 this.actualRoomBackgroundAlt = this.otherRoomList[i].roomBackgroundAlt;
+                this.actualRoomGold = this.otherRoomList[i].roomGold;
             }
-        }
+        },
+        
+        // getJsonFile (index) {
+        //     this.currentJsonFile = require('./assets/' + index + '.json')
+        // }
     }
 });
 

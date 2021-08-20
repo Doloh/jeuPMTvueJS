@@ -1,0 +1,23 @@
+[
+    {
+        "roomTitle": "Alien !",
+        "roomBackground": "",
+        "roomBackgroundAlt": "",
+        "roomDescription": "un Alien",
+        "roomGold": 10
+    },
+    {
+        "roomTitle": "Gizmo !",
+        "roomBackground":"",
+        "roomBackgroundAlt":"",
+        "roomDescription": "un Gizmo",
+        "roomGold": 10
+    },
+    {
+        "roomTitle": "Dragon !",
+        "roomBackground":"",
+        "roomBackgroundAlt":"",
+        "roomDescription": "Pas le choix, il faut abndonner l'or !",
+        "roomGold": -150
+    }
+]

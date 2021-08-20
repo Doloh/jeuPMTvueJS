@@ -19,7 +19,7 @@
         </div>
         <div class="etage">
            
-            <img class="roomIllustration piece" :src="actualRoomBackground" :alt="actualRoomBackgroundAlt">                
+            <img class="roomIllustration" :src="actualRoomBackground" :alt="actualRoomBackgroundAlt">                
            
             <!-- Contenu variant -->            
             <div class="dialogBox">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <!-- Un bouton qui apparait quand etage resolu -->
-        <button @click="getActualRoom()">Continuer</button>
+        <button @click="nextRoom()">Continuer</button>
         <!-- nouvel etage avec le même shema -->
 
         <!-- Chemin résumé du parcours d'etages  -->

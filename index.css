@@ -5,9 +5,12 @@
     display: flex;
 }
 
-.piece {
-    width: 33%;
+.roomIllustration {
+    width: fit-content;
     margin: 20px;
+    height: fit-content;
+    max-height: 90% ;
+    max-width: 33%;
 }
 
 .dialogBox {
