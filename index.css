@@ -1,0 +1,33 @@
+.etage {
+    width: 100%;
+    height: 400px;
+    background-color:rgb(110, 104, 104) ;
+    display: flex;
+}
+
+.piece {
+    width: 33%;
+    margin: 20px;
+}
+
+.dialogBox {
+    width: 66%;
+    background-color: rgb(110, 104, 104) ;
+}
+
+.dialogBox h1 {
+    color:snow;
+    max-height: 25%;
+    overflow: auto;
+}
+
+.dialogBox p {
+    padding-right: 20px;
+    color: snow;
+    font-size: 20px;
+    /* Pour empecher le texte de deborder */
+    overflow: auto;
+    max-height: 75%;
+
+}
+
