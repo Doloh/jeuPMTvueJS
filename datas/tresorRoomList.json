@@ -3,28 +3,28 @@
         "roomTitle": "Petit Tresor !",
         "roomBackground":"./images/tresor1.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"",
+        "roomDescription":"Quelques pièces trainent dans un petit coffre... Vous obtenez 10 pièces d'or.",
         "roomGold": 10
     },
     {
         "roomTitle": "Petit Tresor !",
         "roomBackground":"./images/tresor1.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"",
+        "roomDescription":"Quelques pièces trainent dans un petit coffre... Vous obtenez 10 pièces d'or.",
         "roomGold": 10
     },
     {
         "roomTitle": "Tresor Moyen !",
         "roomBackground":"./images/tresor2.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"",
+        "roomDescription":"Il reste pas mal d'or dans ce coffre ! vous obtenez 70 pièces d'or !",
         "roomGold": 70
     },
     {
         "roomTitle": "Incroyable Tresor !",
         "roomBackground":"./images/tresor3.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"",
+        "roomDescription":"Incroyable, il reste plusieurs gemmes de bonnes qualités là dedans ! Vous obtenez 150 pièces d'or !",
         "roomGold": 150
 
     }

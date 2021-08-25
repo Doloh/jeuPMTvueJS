@@ -1,23 +1,23 @@
 [
     {
         "roomTitle":"Une fontaine !",
-        "roomBackground":"",
+        "roomBackground":"./images/fontaine.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":" Vous jetez un peu d'or dedans, ça porte chance il parait...",
+        "roomDescription":"Une fontaine dans une pièce à l'architecture étrange. Vous jetez un peu d'or dedans, ça porte chance il parait... Vous jetez 30 pièces d'or !",
         "roomGold": -30
     },
     {
         "roomTitle":"Un cachot !",
-        "roomBackground":"",
+        "roomBackground":"./images/cachot.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"",
+        "roomDescription":"Mieux vaut ne pas s'aventurer là dedans...",
         "roomGold": 0
     },
     {
         "roomTitle":"Rien du tout !",
-        "roomBackground":"",
+        "roomBackground":"./images/vide.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription":"C'est totalement vide...",
+        "roomDescription":"C'est totalement vide... Inutile de s'attarder ici...",
         "roomGold": 0
     }
 ]

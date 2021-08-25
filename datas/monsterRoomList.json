@@ -1,23 +1,23 @@
 [
     {
-        "roomTitle": "Alien !",
-        "roomBackground": "",
+        "roomTitle": "Personne... ",
+        "roomBackground": "./images/alien.jpg",
         "roomBackgroundAlt": "",
-        "roomDescription": "un Alien",
-        "roomGold": 10
+        "roomDescription": "...Ne vous entendras crier ici, alors vous restez paralysé par la peur. La créature blessée se dirige vers vous... Elle vous ignore, rampant au dessus de vous, tandis que quelques gouttes de son sang tombent sur votre bourse... Plus de peur que de mal, mais vous perdez 50 pèces d'or.",
+        "roomGold": -20
     },
     {
         "roomTitle": "Gizmo !",
-        "roomBackground":"",
+        "roomBackground":"./images/gizmo.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription": "un Gizmo",
+        "roomDescription": "Votre ami Gizmo, il a trouvé 10 pièces d'or qu'il vous confie génereusement.",
         "roomGold": 10
     },
     {
         "roomTitle": "Dragon !",
-        "roomBackground":"",
+        "roomBackground":"./images/dragon.jpg",
         "roomBackgroundAlt":"",
-        "roomDescription": "Pas le choix, il faut abndonner l'or !",
+        "roomDescription": "Pas le choix, il faut fuir ! Dans la panqiue vous perdez 150 pièces d'or !",
         "roomGold": -150
     }
 ]
